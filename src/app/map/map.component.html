@@ -29,12 +29,12 @@
                         <Label [text]="step[1]" height="20" textWrap="true"></Label>
                     </StackLayout>
                     </StackLayout> 
-                     <FlexboxLayout *ngIf="shortest" align-items="stretch" flexDirection="column" justifyContent="space-between">
+                     <StackLayout *ngIf="!safest">
                     <StackLayout *ngFor="let safe of safeTurnByList" class="map-info-line" height="75">
                         <Label [text]="safe[0]" height="40" textWrap="true"></Label>
                         <Label [text]="safe[1]" height="20" textWrap="true"></Label>
                     </StackLayout>
-                </FlexboxLayout>
+                </StackLayout>
             </StackLayout>
     </Page>
 </ScrollView>

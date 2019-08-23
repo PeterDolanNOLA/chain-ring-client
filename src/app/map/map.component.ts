@@ -295,8 +295,8 @@ export class MapComponent implements OnInit {
                 //}
 
               
-                path.visible = true;
-                safePathPolyLine.visible = false;
+                path.visible = false;
+                safePathPolyLine.visible = true;
                 //wayPointPath.visible = true;
                 path.width = 10;
                 safePathPolyLine.width = 10;
